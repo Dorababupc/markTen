@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Register</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
      <div class="container">
@@ -19,25 +20,33 @@
          <label for="cash-given">Cash Given:</label>
          <input type="text" id="cash-given">
          <button id="check-button">check</button>
-         <table class="change">
-             <caption>Return change</caption>
-             <tr>
-                 <th>No of Notes</th>
-                 <td>
-                     
-                 </td>
-             </tr>
-             <tr>
-                 <td>2000</td>
-                 <td>500</td>
-                 <td>100</td>
-                 <td>20</td>
-                 <td>10</td>
-                 <td>5</td>
-                 <td>1</td>
-             </tr>
-         </table>
-     </div>
+         <p id="display-error"></p>
+        </div>
+         <div class="container">
+            <table class="change">
+                <caption style="margin-bottom: 1rem;">Return change</caption>
+                <tr class="row">
+                    <th class="thead">No of Notes</th>
+                    <td class="fill-notes table"></td>
+                    <td class="fill-notes table"></td>
+                    <td class="fill-notes table"></td>
+                    <td class="fill-notes table"></td>
+                    <td class="fill-notes table"></td>
+                    <td class="fill-notes table"></td>
+                    <td class="fill-notes table"></td>
+                </tr>
+                <tr class="row">
+                   <th class="thead">note</th>
+                    <td class="table" >2000</td>
+                    <td class="table" >500</td>
+                    <td class="table" >100</td>
+                    <td class="table" >20</td>
+                    <td class="table" >10</td>
+                    <td class="table" >5</td>
+                    <td class="table" >1</td>
+                </tr>
+            </table>
+         </div>
      
 </body>
     <script src="index.js"></script>
